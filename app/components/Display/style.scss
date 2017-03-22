@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  margin: 1em;
+}
+
+.output {
+  text-transform: uppercase;
+  font-size: ms(2);
+}
+
+.red {
+  color: red;
+}
+
+.black {
+  color: white;
+  background: #333;
+}
+
+.blue {
+  color: blue;
+}

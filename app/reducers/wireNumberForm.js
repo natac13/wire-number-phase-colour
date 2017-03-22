@@ -5,7 +5,7 @@ import findPhaseColour from '../utils/findPhaseColour.js';
 
 const initailState = Map({
   wireNumber: undefined,
-  colour: '',
+  phaseColour: '',
 });
 
 function reducer(state = initailState, action) {

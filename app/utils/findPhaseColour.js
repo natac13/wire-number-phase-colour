@@ -19,7 +19,7 @@ function findPhaseColour(state, wireNumber) {
   const phaseSetValue = getPhaseSetValue(wireNumber);
   console.log(phaseSetValue);
 
-  return tmpState.set('colour', phaseSet[phaseSetValue]);
+  return tmpState.set('phaseColour', phaseSet[phaseSetValue]);
 }
 
 export default findPhaseColour;
