@@ -39,6 +39,7 @@ function mapStateToProps(state) {
     appName: 'WireNumberPhaseColour',
     routing: state.get('routing'),
     windowSize: state.get('windowSize'),
+    wireNumberForm: state.get('wireNumberForm'),
   };
 }
 

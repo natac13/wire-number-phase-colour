@@ -4,7 +4,9 @@ import bodyParser from 'body-parser';
 import favicon from 'serve-favicon';
 
 /** Database Connection */
-import connectToDB from './dbConnection.js';
+// import connectToDB from './dbConnection.js';
+// connect to DB
+// connectToDB(env, process.env.MONGO_URI);
 
 /** Routes */
 import errorHandler from './routes/errorHandler.js';
@@ -31,8 +33,7 @@ const app = express();
 const port = process.env.PORT || 3013;
 const env = process.env.NODE_ENV;
 
-// connect to DB
-connectToDB(env, process.env.MONGO_URI);
+
 if (env === 'development') {
   // logging
   const morgan = require('morgan');

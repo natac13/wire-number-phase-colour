@@ -5,6 +5,7 @@ import compression from 'compression';
 import fs from 'fs';
 import morgan from 'morgan';
 import favicon from 'serve-favicon';
+// import connectToDB from './dbConnection.js';
 
 
 import errorHandler from './routes/errorHandler.js';
