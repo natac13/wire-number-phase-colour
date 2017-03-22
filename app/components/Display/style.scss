@@ -1,7 +1,9 @@
 .wrapper {
   display: flex;
   flex-flow: row;
-  margin: 1em;
+  margin: 5em 1em 1em;
+  width: 30em;
+  text-align: center
 }
 
 .output {
@@ -9,15 +11,29 @@
   font-size: ms(2);
 }
 
+.box {
+  color: $offWhite;
+  width: 100%;
+  padding: .25em 1em;
+}
+
 .red {
-  color: red;
+  composes: box;
+  background-color: $red;
 }
 
 .black {
-  color: white;
-  background: #333;
+  composes: box;
+  background-color: $black;
 }
 
 .blue {
-  color: blue;
+  composes: box;
+  background-color: $blue;
+
+  &:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 255, 0.2),
+                0 0 2em rgba(0, 90, 255, 0.9),
+                0 0 5em rgba(0, 30, 255, 1)
+  }
 }

@@ -1,0 +1,22 @@
+.header {
+  height: 20vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: ms(3);
+  letter-spacing: 2px;
+  color: $contrast;
+  font-family: $title-font;
+}
+
+.creator {
+  align-self: flex-end;
+  color: $forth-color;
+  font-size: ms(1);
+  text-decoration: underline;
+  text-shadow: 0 0 2px $secondary-color;
+}
