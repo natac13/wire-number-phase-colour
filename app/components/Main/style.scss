@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(to bottom, rgba($primary-color, .8), rgba($offWhite, .8));
+  height: 100vh;
+  padding: 4%;
+}
+
+
