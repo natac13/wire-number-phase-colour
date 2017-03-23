@@ -17,7 +17,7 @@ function Main(props) {
 
   return (
     <div className={wrapperClass}>
-      <Header appName={appName} />
+      <Header appName={appName} push={actions.push} />
       <Form actions={actions} />
       <Display wireNumberForm={wireNumberForm} />
     </div>

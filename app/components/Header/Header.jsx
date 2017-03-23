@@ -5,7 +5,7 @@ import { compose } from 'recompose';
 import style from './style.scss';
 
 function Header(props) {
-  const { appName, className } = props;
+  const { appName, className, push } = props;
   const wrapperClass = classnames({
     [style.header]: true,
     [className]: !!props.className,
@@ -16,7 +16,11 @@ function Header(props) {
   return (
     <header className={wrapperClass}>
       <h1 className={style.title}>{title}</h1>
-      <h4 className={style.creator}>Created by: Sean Campbell</h4>
+      <h4 className={style.creator}>
+        <a href="https://seancampbellnatac.com">
+          Created by: Sean Campbell
+        </a>
+      </h4>
     </header>
   );
 }
