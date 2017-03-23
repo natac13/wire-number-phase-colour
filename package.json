@@ -1,8 +1,18 @@
 {
   "name": "wire-number-phase-colour",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Electrical wire number phase colour",
   "main": "server/development.js",
+  "directories": {
+    "test": "test",
+    "client": "app",
+    "server": "server",
+    "production": "build"
+  },
+  "engines": {
+    "node": "6.9.2",
+    "npm": "3.10.9"
+  },
   "scripts": {
     "clean": "rimraf build/",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-core/register -r babel-polyfill -r dotenv/config -r ./test/setup.js test/**/**/**/*.js test/**/*.js",
@@ -18,6 +28,10 @@
   },
   "author": "Sean Campbell <sean.campbell13@gmail.com> (http://seancampbellnatac.com/)",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natac13/wire-number-phase-colour/issues"
+  },
+  "homepage": "https://github.com/natac13/wire-number-phase-colour#readme",
   "devDependencies": {
     "autoprefixer": "6.3.6",
     "babel": "6.5.2",
