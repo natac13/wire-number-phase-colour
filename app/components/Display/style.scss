@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  flex-flow: row;
+  margin: 5em 1em 1em;
+  width: 30em;
+  text-align: center
+}
+
+.output {
+  text-transform: uppercase;
+  font-size: ms(2);
+}
+
+.box {
+  color: $offWhite;
+  width: 100%;
+  padding: .25em 1em;
+}
+
+.red {
+  composes: box;
+  background-color: $red;
+
+  box-shadow: 0 0 1em rgba(255, 0, 0, 0.2),
+                0 0 2em rgba(255, 40, 40, 0.5),
+                0 0 5em rgba(255, 0, 10, 1)
+}
+
+.black {
+  composes: box;
+  background-color: $black;
+
+  text-shadow: 0 0 1em rgba(200, 200, 200, 0.2),
+                0 0 2em rgba(255, 255, 255, 0.5),
+                0 0 5em rgba(255, 255, 255, .7)
+}
+
+.blue {
+  composes: box;
+  background-color: $blue;
+
+  box-shadow: 0 0 1em rgba(0, 0, 255, 0.2),
+              0 0 2em rgba(0, 90, 255, 0.9),
+              0 0 5em rgba(0, 30, 255, 1)
+}

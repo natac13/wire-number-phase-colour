@@ -22,7 +22,7 @@ function Form(props) {
     handleSubmit,
     pristine,
     reset,
-    submitting
+    submitting,
   } = props;
   const wrapperClass = classnames({
     [style.wrapper]: true,
@@ -32,8 +32,26 @@ function Form(props) {
   return (
     <section className={wrapperClass}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Field name="wireNumber" component={Input} label="Wire Number" placeholder="Input Number" />
-        <Button type="submit">Get Colour</Button>
+        <Field
+          className={style.input}
+          name="wireNumber"
+          component={Input}
+          label="Wire Number Input"
+          placeholder="Input Number"
+        />
+        <section className={style.buttons}>
+          <Button
+            className={style.submit}
+            type="submit"
+            disabled={submitting}
+          >Get Colour</Button>
+          <Button
+            className={style.reset}
+            type="button"
+            onClick={reset}
+            disabled={submitting}
+          >Clear</Button>
+        </section>
       </form>
     </section>
   );
@@ -42,6 +60,10 @@ function Form(props) {
 
 Form.propTypes = {
   className: PropTypes.string,
+  submitting: PropTypes.boolean,
+  pristine: PropTypes.boolean,
+  handleSubmit: PropTypes.func,
+  reset: PropTypes.func
 };
 
 export default reduxForm({
