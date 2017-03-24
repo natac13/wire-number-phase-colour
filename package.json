@@ -23,7 +23,7 @@
     "build": "cross-env NODE_ENV=production npm run build:app && npm run build:server",
     "predeploy": "npm run build",
     "lint": "eslint app/",
-    "start-production": "pm2 start -i 2 --name='recordKeeping' build/production.server.bundle.js",
+    "start-production": "pm2 start -i 2 --name='wireNumberPhaseColour' build/production.server.bundle.js",
     "start:demo": "cross-env NODE_ENV=production node -r dotenv/config build/production.server.bundle.js"
   },
   "author": "Sean Campbell <sean.campbell13@gmail.com> (http://seancampbellnatac.com/)",
