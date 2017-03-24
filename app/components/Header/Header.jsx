@@ -17,7 +17,7 @@ function Header(props) {
     <header className={wrapperClass}>
       <h1 className={style.title}>{title}</h1>
       <h4 className={style.creator}>
-        <a href="https://seancampbellnatac.com">
+        <a href="https://seancampbellnatac.com/tutoring">
           Created by: Sean Campbell
         </a>
       </h4>
