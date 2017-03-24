@@ -1,6 +1,6 @@
 {
   "name": "wire-number-phase-colour",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Electrical wire number phase colour",
   "main": "server/development.js",
   "directories": {

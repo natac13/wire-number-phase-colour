@@ -35,6 +35,7 @@ function Form(props) {
         <Field
           className={style.input}
           name="wireNumber"
+          type="number"
           component={Input}
           label="Wire Number Input"
           placeholder="Input Number"
